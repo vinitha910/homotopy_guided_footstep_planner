@@ -1,0 +1,876 @@
+
+test_1:
+    solution_found:        0
+    hbsp_heuristic_time:   0.000000
+    anchor_heuristic_time: 0.032518
+    planning_time:         3600.000035
+    total_planning_time:   3600.032553
+    num_expansions:        62765642
+    path length:           0
+    query_type:            "very_complex"
+
+
+test_2:
+    solution_found:        0
+    hbsp_heuristic_time:   0.000000
+    anchor_heuristic_time: 0.028060
+    planning_time:         3600.000046
+    total_planning_time:   3600.028106
+    num_expansions:        65188379
+    path length:           0
+    query_type:            "very_complex"
+
+
+test_3:
+    solution_found:        1
+    hbsp_heuristic_time:   0.000000
+    anchor_heuristic_time: 0.023849
+    planning_time:         0.040659
+    total_planning_time:   0.064508
+    num_expansions:        769
+    path length:           81
+    query_type:            "simple"
+
+
+test_4:
+    solution_found:        1
+    hbsp_heuristic_time:   0.000000
+    anchor_heuristic_time: 0.022010
+    planning_time:         0.159599
+    total_planning_time:   0.181609
+    num_expansions:        2653
+    path length:           185
+    query_type:            "simple"
+
+
+test_5:
+    solution_found:        0
+    hbsp_heuristic_time:   0.000000
+    anchor_heuristic_time: 0.022380
+    planning_time:         3600.000022
+    total_planning_time:   3600.022402
+    num_expansions:        67062108
+    path length:           0
+    query_type:            "very_complex"
+
+
+test_6:
+    solution_found:        1
+    hbsp_heuristic_time:   0.000000
+    anchor_heuristic_time: 0.032443
+    planning_time:         0.009121
+    total_planning_time:   0.041564
+    num_expansions:        139
+    path length:           60
+    query_type:            "simple"
+
+
+test_7:
+    solution_found:        1
+    hbsp_heuristic_time:   0.000000
+    anchor_heuristic_time: 0.024231
+    planning_time:         0.196907
+    total_planning_time:   0.221138
+    num_expansions:        3282
+    path length:           206
+    query_type:            "simple"
+
+
+test_8:
+    solution_found:        0
+    hbsp_heuristic_time:   0.000000
+    anchor_heuristic_time: 0.037076
+    planning_time:         3600.000138
+    total_planning_time:   3600.037214
+    num_expansions:        68833682
+    path length:           0
+    query_type:            "very_complex"
+
+
+test_9:
+    solution_found:        0
+    hbsp_heuristic_time:   0.000000
+    anchor_heuristic_time: 0.024493
+    planning_time:         3600.000014
+    total_planning_time:   3600.024507
+    num_expansions:        56021528
+    path length:           0
+    query_type:            "very_complex"
+
+
+test_10:
+    solution_found:        1
+    hbsp_heuristic_time:   0.000000
+    anchor_heuristic_time: 0.024056
+    planning_time:         12.431410
+    total_planning_time:   12.455466
+    num_expansions:        194730
+    path length:           200
+    query_type:            "complex"
+
+
+test_11:
+    solution_found:        1
+    hbsp_heuristic_time:   0.000000
+    anchor_heuristic_time: 0.026542
+    planning_time:         49.872566
+    total_planning_time:   49.899108
+    num_expansions:        650661
+    path length:           122
+    query_type:            "complex"
+
+
+test_12:
+    solution_found:        1
+    hbsp_heuristic_time:   0.000000
+    anchor_heuristic_time: 0.029788
+    planning_time:         1590.647553
+    total_planning_time:   1590.677341
+    num_expansions:        24908761
+    path length:           271
+    query_type:            "complex"
+
+
+test_13:
+    solution_found:        1
+    hbsp_heuristic_time:   0.000000
+    anchor_heuristic_time: 0.018643
+    planning_time:         0.037960
+    total_planning_time:   0.056603
+    num_expansions:        847
+    path length:           224
+    query_type:            "simple"
+
+
+test_14:
+    solution_found:        0
+    hbsp_heuristic_time:   0.000000
+    anchor_heuristic_time: 0.020083
+    planning_time:         3600.000057
+    total_planning_time:   3600.020140
+    num_expansions:        60033345
+    path length:           0
+    query_type:            "very_complex"
+
+
+test_15:
+    solution_found:        1
+    hbsp_heuristic_time:   0.000000
+    anchor_heuristic_time: 0.018732
+    planning_time:         5.069813
+    total_planning_time:   5.088545
+    num_expansions:        84141
+    path length:           327
+    query_type:            "complex"
+
+
+test_16:
+    solution_found:        1
+    hbsp_heuristic_time:   0.000000
+    anchor_heuristic_time: 0.019454
+    planning_time:         0.021097
+    total_planning_time:   0.040551
+    num_expansions:        298
+    path length:           109
+    query_type:            "simple"
+
+
+test_17:
+    solution_found:        1
+    hbsp_heuristic_time:   0.000000
+    anchor_heuristic_time: 0.019225
+    planning_time:         0.063887
+    total_planning_time:   0.083112
+    num_expansions:        1313
+    path length:           152
+    query_type:            "simple"
+
+
+test_18:
+    solution_found:        1
+    hbsp_heuristic_time:   0.000000
+    anchor_heuristic_time: 0.024125
+    planning_time:         139.045488
+    total_planning_time:   139.069613
+    num_expansions:        2360875
+    path length:           315
+    query_type:            "complex"
+
+test_19:
+    solution_found:        1
+    hbsp_heuristic_time:   0.000000
+    anchor_heuristic_time: 0.018743
+    planning_time:         0.248232
+    total_planning_time:   0.266975
+    num_expansions:        4975
+    path length:           200
+    query_type:            "simple"
+
+
+test_20:
+    solution_found:        0
+    hbsp_heuristic_time:   0.000000
+    anchor_heuristic_time: 0.025302
+    planning_time:         3600.000001
+    total_planning_time:   3600.025303
+    num_expansions:        59734846
+    path length:           0
+    query_type:            "very_complex"
+
+
+test_21:
+    solution_found:        1
+    hbsp_heuristic_time:   0.000000
+    anchor_heuristic_time: 0.018861
+    planning_time:         55.607483
+    total_planning_time:   55.626344
+    num_expansions:        968341
+    path length:           304
+    query_type:            "complex"
+
+
+test_22:
+    solution_found:        1
+    hbsp_heuristic_time:   0.000000
+    anchor_heuristic_time: 0.019054
+    planning_time:         12.136400
+    total_planning_time:   12.155454
+    num_expansions:        239302
+    path length:           175
+    query_type:            "complex"
+
+
+test_23:
+    solution_found:        1
+    hbsp_heuristic_time:   0.000000
+    anchor_heuristic_time: 0.018553
+    planning_time:         833.908732
+    total_planning_time:   833.927285
+    num_expansions:        14142289
+    path length:           416
+    query_type:            "complex"
+
+
+test_24:
+    solution_found:        1
+    hbsp_heuristic_time:   0.000000
+    anchor_heuristic_time: 0.025356
+    planning_time:         0.245738
+    total_planning_time:   0.271094
+    num_expansions:        4916
+    path length:           214
+    query_type:            "simple"
+
+
+test_25:
+    solution_found:        1
+    hbsp_heuristic_time:   0.000000
+    anchor_heuristic_time: 0.019357
+    planning_time:         4.042222
+    total_planning_time:   4.061579
+    num_expansions:        82600
+    path length:           180
+    query_type:            "complex"
+
+
+test_26:
+    solution_found:        1
+    hbsp_heuristic_time:   0.000000
+    anchor_heuristic_time: 0.020213
+    planning_time:         4.521266
+    total_planning_time:   4.541479
+    num_expansions:        79392
+    path length:           235
+    query_type:            "complex"
+
+
+test_27:
+    solution_found:        1
+    hbsp_heuristic_time:   0.000000
+    anchor_heuristic_time: 0.020355
+    planning_time:         836.840283
+    total_planning_time:   836.860638
+    num_expansions:        12893913
+    path length:           284
+    query_type:            "complex"
+
+
+test_28:
+    solution_found:        1
+    hbsp_heuristic_time:   0.000000
+    anchor_heuristic_time: 0.028197
+    planning_time:         833.613375
+    total_planning_time:   833.641572
+    num_expansions:        12470800
+    path length:           229
+    query_type:            "complex"
+
+
+test_29:
+    solution_found:        1
+    hbsp_heuristic_time:   0.000000
+    anchor_heuristic_time: 0.019095
+    planning_time:         0.092936
+    total_planning_time:   0.112031
+    num_expansions:        2098
+    path length:           102
+    query_type:            "simple"
+
+
+test_30:
+    solution_found:        1
+    hbsp_heuristic_time:   0.000000
+    anchor_heuristic_time: 0.030461
+    planning_time:         0.039436
+    total_planning_time:   0.069897
+    num_expansions:        651
+    path length:           236
+    query_type:            "simple"
+
+
+test_31:
+    solution_found:        1
+    hbsp_heuristic_time:   0.000000
+    anchor_heuristic_time: 0.018634
+    planning_time:         0.071548
+    total_planning_time:   0.090182
+    num_expansions:        1679
+    path length:           164
+    query_type:            "simple"
+
+
+test_32:
+    solution_found:        1
+    hbsp_heuristic_time:   0.000000
+    anchor_heuristic_time: 0.018889
+    planning_time:         0.072138
+    total_planning_time:   0.091027
+    num_expansions:        1582
+    path length:           227
+    query_type:            "simple"
+
+
+test_33:
+    solution_found:        1
+    hbsp_heuristic_time:   0.000000
+    anchor_heuristic_time: 0.019253
+    planning_time:         3.716438
+    total_planning_time:   3.735691
+    num_expansions:        78274
+    path length:           172
+    query_type:            "complex"
+
+
+test_34:
+    solution_found:        1
+    hbsp_heuristic_time:   0.000000
+    anchor_heuristic_time: 0.026929
+    planning_time:         1.693110
+    total_planning_time:   1.720039
+    num_expansions:        33102
+    path length:           194
+    query_type:            "simple"
+
+
+test_35:
+    solution_found:        0
+    hbsp_heuristic_time:   0.000000
+    anchor_heuristic_time: 0.028695
+    planning_time:         3600.000268
+    total_planning_time:   3600.028963
+    num_expansions:        61085072
+    path length:           0
+    query_type:            "very_complex"
+
+
+test_36:
+    solution_found:        0
+    hbsp_heuristic_time:   0.000000
+    anchor_heuristic_time: 0.028251
+    planning_time:         3600.000020
+    total_planning_time:   3600.028271
+    num_expansions:        53095062
+    path length:           0
+    query_type:            "very_complex"
+
+
+test_37:
+    solution_found:        1
+    hbsp_heuristic_time:   0.000000
+    anchor_heuristic_time: 0.036643
+    planning_time:         0.055132
+    total_planning_time:   0.091775
+    num_expansions:        881
+    path length:           195
+    query_type:            "simple"
+
+
+test_38:
+    solution_found:        1
+    hbsp_heuristic_time:   0.000000
+    anchor_heuristic_time: 0.021203
+    planning_time:         0.146936
+    total_planning_time:   0.168139
+    num_expansions:        2518
+    path length:           107
+    query_type:            "simple"
+
+
+test_39:
+    solution_found:        1
+    hbsp_heuristic_time:   0.000000
+    anchor_heuristic_time: 0.027327
+    planning_time:         1.389567
+    total_planning_time:   1.416894
+    num_expansions:        22662
+    path length:           160
+    query_type:            "complex"
+
+
+test_40:
+    solution_found:        1
+    hbsp_heuristic_time:   0.000000
+    anchor_heuristic_time: 0.035731
+    planning_time:         0.072229
+    total_planning_time:   0.107960
+    num_expansions:        1219
+    path length:           133
+    query_type:            "simple"
+
+
+test_41:
+    solution_found:        1
+    hbsp_heuristic_time:   0.000000
+    anchor_heuristic_time: 0.028235
+    planning_time:         0.299553
+    total_planning_time:   0.327788
+    num_expansions:        5484
+    path length:           197
+    query_type:            "simple"
+
+
+test_42:
+    solution_found:        1
+    hbsp_heuristic_time:   0.000000
+    anchor_heuristic_time: 0.030613
+    planning_time:         0.125499
+    total_planning_time:   0.156112
+    num_expansions:        2004
+    path length:           69
+    query_type:            "simple"
+
+
+test_43:
+    solution_found:        1
+    hbsp_heuristic_time:   0.000000
+    anchor_heuristic_time: 0.033672
+    planning_time:         0.078790
+    total_planning_time:   0.112462
+    num_expansions:        1341
+    path length:           116
+    query_type:            "simple"
+
+
+test_44:
+    solution_found:        0
+    hbsp_heuristic_time:   0.000000
+    anchor_heuristic_time: 0.028952
+    planning_time:         3600.000017
+    total_planning_time:   3600.028969
+    num_expansions:        50922023
+    path length:           0
+    query_type:            "very_complex"
+
+
+test_45:
+    solution_found:        1
+    hbsp_heuristic_time:   0.000000
+    anchor_heuristic_time: 0.028467
+    planning_time:         462.355506
+    total_planning_time:   462.383973
+    num_expansions:        6804301
+    path length:           229
+    query_type:            "complex"
+
+
+test_46:
+    solution_found:        1
+    hbsp_heuristic_time:   0.000000
+    anchor_heuristic_time: 0.032103
+    planning_time:         0.249849
+    total_planning_time:   0.281952
+    num_expansions:        4078
+    path length:           213
+    query_type:            "simple"
+
+
+test_47:
+    solution_found:        1
+    hbsp_heuristic_time:   0.000000
+    anchor_heuristic_time: 0.023944
+    planning_time:         18.252941
+    total_planning_time:   18.276885
+    num_expansions:        279525
+    path length:           137
+    query_type:            "complex"
+
+
+test_48:
+    solution_found:        1
+    hbsp_heuristic_time:   0.000000
+    anchor_heuristic_time: 0.023298
+    planning_time:         0.157324
+    total_planning_time:   0.180622
+    num_expansions:        2977
+    path length:           104
+    query_type:            "simple"
+
+test_49:
+    solution_found:        1
+    hbsp_heuristic_time:   0.000000
+    anchor_heuristic_time: 0.030675
+    planning_time:         0.045737
+    total_planning_time:   0.076412
+    num_expansions:        550
+    path length:           188
+    query_type:            "simple"
+
+test_50:
+    solution_found:        1
+    hbsp_heuristic_time:   0.000000
+    anchor_heuristic_time: 0.036567
+    planning_time:         0.010553
+    total_planning_time:   0.047120
+    num_expansions:        141
+    path length:           54
+    query_type:            "simple"
+
+
+test_51:
+    solution_found:        1
+    hbsp_heuristic_time:   0.000000
+    anchor_heuristic_time: 0.029827
+    planning_time:         0.190395
+    total_planning_time:   0.220222
+    num_expansions:        3115
+    path length:           245
+    query_type:            "simple"
+
+
+test_52:
+    solution_found:        1
+    hbsp_heuristic_time:   0.000000
+    anchor_heuristic_time: 0.028957
+    planning_time:         0.048026
+    total_planning_time:   0.076983
+    num_expansions:        819
+    path length:           102
+    query_type:            "simple"
+
+
+test_53:
+    solution_found:        1
+    hbsp_heuristic_time:   0.000000
+    anchor_heuristic_time: 0.032410
+    planning_time:         0.484885
+    total_planning_time:   0.517295
+    num_expansions:        8406
+    path length:           119
+    query_type:            "simple"
+
+
+test_54:
+    solution_found:        1
+    hbsp_heuristic_time:   0.000000
+    anchor_heuristic_time: 0.025202
+    planning_time:         2.113763
+    total_planning_time:   2.138965
+    num_expansions:        34150
+    path length:           106
+    query_type:            "complex"
+
+
+test_55:
+    solution_found:        1
+    hbsp_heuristic_time:   0.000000
+    anchor_heuristic_time: 0.029679
+    planning_time:         0.138621
+    total_planning_time:   0.168300
+    num_expansions:        2356
+    path length:           247
+    query_type:            "simple"
+
+test_56:
+    solution_found:        1
+    hbsp_heuristic_time:   0.000000
+    anchor_heuristic_time: 0.023389
+    planning_time:         0.582108
+    total_planning_time:   0.605497
+    num_expansions:        9933
+    path length:           196
+    query_type:            "simple"
+
+
+test_57:
+    solution_found:        1
+    hbsp_heuristic_time:   0.000000
+    anchor_heuristic_time: 0.023078
+    planning_time:         2.954479
+    total_planning_time:   2.977557
+    num_expansions:        48908
+    path length:           186
+    query_type:            "complex"
+
+
+test_58:
+    solution_found:        1
+    hbsp_heuristic_time:   0.000000
+    anchor_heuristic_time: 0.029928
+    planning_time:         5.023131
+    total_planning_time:   5.053059
+    num_expansions:        87394
+    path length:           289
+    query_type:            "complex"
+
+
+test_59:
+    solution_found:        1
+    hbsp_heuristic_time:   0.000000
+    anchor_heuristic_time: 0.030141
+    planning_time:         1.033799
+    total_planning_time:   1.063940
+    num_expansions:        17758
+    path length:           187
+    query_type:            "simple"
+
+
+test_60:
+    solution_found:        1
+    hbsp_heuristic_time:   0.000000
+    anchor_heuristic_time: 0.022246
+    planning_time:         0.284950
+    total_planning_time:   0.307196
+    num_expansions:        4755
+    path length:           138
+    query_type:            "simple"
+
+
+test_61:
+    solution_found:        1
+    hbsp_heuristic_time:   0.000000
+    anchor_heuristic_time: 0.029619
+    planning_time:         3.845850
+    total_planning_time:   3.875469
+    num_expansions:        61657
+    path length:           144
+    query_type:            "complex"
+
+
+test_62:
+    solution_found:        1
+    hbsp_heuristic_time:   0.000000
+    anchor_heuristic_time: 0.023125
+    planning_time:         0.059154
+    total_planning_time:   0.082279
+    num_expansions:        976
+    path length:           189
+    query_type:            "simple"
+
+
+test_63:
+    solution_found:        1
+    hbsp_heuristic_time:   0.000000
+    anchor_heuristic_time: 0.031481
+    planning_time:         9.498529
+    total_planning_time:   9.530010
+    num_expansions:        189996
+    path length:           169
+    query_type:            "complex"
+
+
+test_64:
+    solution_found:        1
+    hbsp_heuristic_time:   0.000000
+    anchor_heuristic_time: 0.026910
+    planning_time:         0.101169
+    total_planning_time:   0.128079
+    num_expansions:        1778
+    path length:           208
+    query_type:            "simple"
+
+
+test_65:
+    solution_found:        1
+    hbsp_heuristic_time:   0.000000
+    anchor_heuristic_time: 0.022509
+    planning_time:         0.086204
+    total_planning_time:   0.108713
+    num_expansions:        1465
+    path length:           230
+    query_type:            "simple"
+
+
+test_66:
+    solution_found:        1
+    hbsp_heuristic_time:   0.000000
+    anchor_heuristic_time: 0.022130
+    planning_time:         0.811709
+    total_planning_time:   0.833839
+    num_expansions:        14077
+    path length:           238
+    query_type:            "simple"
+
+
+test_67:
+    solution_found:        1
+    hbsp_heuristic_time:   0.000000
+    anchor_heuristic_time: 0.027384
+    planning_time:         66.887303
+    total_planning_time:   66.914687
+    num_expansions:        1025476
+    path length:           145
+    query_type:            "complex"
+
+
+test_68:
+    solution_found:        1
+    hbsp_heuristic_time:   0.000000
+    anchor_heuristic_time: 0.030396
+    planning_time:         2460.187439
+    total_planning_time:   2460.217835
+    num_expansions:        34843325
+    path length:           364
+    query_type:            "complex"
+
+
+test_69:
+    solution_found:        1
+    hbsp_heuristic_time:   0.000000
+    anchor_heuristic_time: 0.027770
+    planning_time:         0.083278
+    total_planning_time:   0.111048
+    num_expansions:        1465
+    path length:           87
+    query_type:            "simple"
+
+
+test_70:
+    solution_found:        1
+    hbsp_heuristic_time:   0.000000
+    anchor_heuristic_time: 0.032640
+    planning_time:         198.981113
+    total_planning_time:   199.013753
+    num_expansions:        2822929
+    path length:           362
+    query_type:            "complex"
+
+
+test_71:
+    solution_found:        1
+    hbsp_heuristic_time:   0.000000
+    anchor_heuristic_time: 0.024771
+    planning_time:         4.852906
+    total_planning_time:   4.877677
+    num_expansions:        87050
+    path length:           316
+    query_type:            "complex"
+
+
+test_72:
+    solution_found:        1
+    hbsp_heuristic_time:   0.000000
+    anchor_heuristic_time: 0.030221
+    planning_time:         1.237899
+    total_planning_time:   1.268120
+    num_expansions:        25475
+    path length:           281
+    query_type:            "complex"
+
+
+test_73:
+    solution_found:        1
+    hbsp_heuristic_time:   0.000000
+    anchor_heuristic_time: 0.021604
+    planning_time:         17.129844
+    total_planning_time:   17.151448
+    num_expansions:        283764
+    path length:           221
+    query_type:            "complex"
+
+
+test_74:
+    solution_found:        1
+    hbsp_heuristic_time:   0.000000
+    anchor_heuristic_time: 0.026569
+    planning_time:         0.962324
+    total_planning_time:   0.988893
+    num_expansions:        18317
+    path length:           153
+    query_type:            "simple"
+
+
+test_75:
+    solution_found:        1
+    hbsp_heuristic_time:   0.000000
+    anchor_heuristic_time: 0.030568
+    planning_time:         0.101264
+    total_planning_time:   0.131832
+    num_expansions:        1683
+    path length:           216
+    query_type:            "simple"
+
+
+test_76:
+    solution_found:        1
+    hbsp_heuristic_time:   0.000000
+    anchor_heuristic_time: 0.022379
+    planning_time:         126.705389
+    total_planning_time:   126.727768
+    num_expansions:        1863495
+    path length:           228
+    query_type:            "complex"
+
+
+test_77:
+    solution_found:        1
+    hbsp_heuristic_time:   0.000000
+    anchor_heuristic_time: 0.029387
+    planning_time:         0.019819
+    total_planning_time:   0.049206
+    num_expansions:        366
+    path length:           85
+    query_type:            "simple"
+
+
+test_78:
+    solution_found:        1
+    hbsp_heuristic_time:   0.000000
+    anchor_heuristic_time: 0.022441
+    planning_time:         1.785194
+    total_planning_time:   1.807635
+    num_expansions:        33364
+    path length:           94
+    query_type:            "complex"
+
+
+test_79:
+    solution_found:        0
+    hbsp_heuristic_time:   0.000000
+    anchor_heuristic_time: 0.030102
+    planning_time:         3600.000012
+    total_planning_time:   3600.030114
+    num_expansions:        47923047
+    path length:           0
+    query_type:            "very_complex"
+
+
+test_80:
+    solution_found:        1
+    hbsp_heuristic_time:   0.000000
+    anchor_heuristic_time: 0.028194
+    planning_time:         0.042347
+    total_planning_time:   0.070541
+    num_expansions:        705
+    path length:           202
+    query_type:            "simple"
+

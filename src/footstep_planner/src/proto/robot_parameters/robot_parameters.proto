@@ -1,0 +1,105 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 2019, Vinitha Ranganeni & Sahit Chintalapudi
+// All rights reserved.
+//
+// Redistribution and use in source and binary forms, with or without
+// modification, are permitted provided that the following conditions are met:
+//
+//     1. Redistributions of source code must retain the above copyright notice
+//        this list of conditions and the following disclaimer.
+//     2. Redistributions in binary form must reproduce the above copyright
+//        notice, this list of conditions and the following disclaimer in the
+//        documentation and/or other materials provided with the distribution.
+//     3. Neither the name of the copyright holder nor the names of its
+//        contributors may be used to endorse or promote products derived from
+//        this software without specific prior written permission.
+//
+// THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+// AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+// IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+// ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE
+// LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+// CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+// SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+// INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+// CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+// ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+// POSSIBILITY OF SUCH DAMAGE.
+////////////////////////////////////////////////////////////////////////////////
+
+syntax = "proto2";
+
+package footstep_planner.proto;
+
+// This message contains the parameters for a collision sphere
+message CollisionSpheres {
+    // The x-coordinate of the sphere center
+    required double x = 1;
+
+    // The y-coordinate of the sphere center
+    required double y = 2;
+
+    // The z-coordinate of the sphere center
+    required double z = 3;
+
+    // The radius of the sphere
+    required double radius = 4;
+
+    // The origin of the sphere
+    // When the collision spheres are transformed; they are transformed with
+    // respect to the specified origin
+    enum Origin {
+        // This refers to the center point of the left foot
+    	LEFT_FOOT = 1;
+
+        // This refers to the center point of the right foot
+    	RIGHT_FOOT = 2;
+
+        // This refers to the point exactly between the two feet
+    	FEET_CENTER = 3;
+    }
+
+    required Origin origin = 5 [default = FEET_CENTER];
+}
+
+message MotionPrimitives {
+    // The magnitude of the x-component of the forward direction vector
+	required double dx = 1;
+
+    // The magnitude of the y-component of the forward direction vector
+	required double dy = 2;
+
+    // The magnitude of the z-direction vector
+	required double dz = 3;
+}
+
+message RobotParameters {
+    // The height of the robot (meters)
+    required double height_m = 1;
+
+    // The robot's in-radius (meters)
+    // i.e. The distance from the robot's center point to the torso
+	required double in_radius_m = 2;
+
+    // The length of the robot's foot (meters)
+	required double foot_length_m = 3;
+
+    // The width of the robot's foot (meters)
+	required double foot_width_m = 4;
+
+    // The nominal offset between the feet (meters)
+    required double nominal_offset_m = 5;
+
+    // The number of possible theta values (i.e. orientations of the feet)
+    // This value is used to calculate the delta theta for the motion primitives
+    // More specifically, dtheta = 2PI / num_theta_vals
+	required uint32 num_theta_vals = 6;
+    required double goal_tolerance_m = 7;
+
+	// This message contains all the collision sphere parameters used for
+	// collision-checking
+	repeated CollisionSpheres collision_spheres = 8;
+
+    // This message contains all the robot motion primitives
+	repeated MotionPrimitives motion_primitives = 9;
+}

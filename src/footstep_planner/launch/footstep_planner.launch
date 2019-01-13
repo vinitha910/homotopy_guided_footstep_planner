@@ -1,0 +1,15 @@
+<launch>
+    <param name="robot_description" command="$(find xacro)/xacro.py '$(find robot_description)/urdf/poppy_humanoid.urdf.xacro'"/>
+
+    <node name="rviz" pkg="rviz" type="rviz" args="-d $(find footstep_planner)/rviz/vis.rviz"/>
+
+  	<arg name="stats_filepath" default="$(find footstep_planner)/test/stats.yaml"/>
+    <arg name="test_num" default="0"/>
+  	<arg name="scenario" default="hbsp_1/hbsp_test_1_1.yaml"/>
+
+  	<rosparam command="load" file="$(find footstep_planner)/scenarios/$(arg scenario)" />
+
+    <arg unless="$(arg debug)" name="launch-prefix" value=""/>
+    <arg     if="$(arg debug)" name="launch-prefix" value="gdb -ex run --args"/>
+  	<node pkg="footstep_planner" type="footstep_planner" name="footstep_planner" required="true" clear_params="true" launch-prefix="$(arg launch-prefix)" output="screen" args="$(arg stats_filepath) $(arg test_num)"/>
+</launch>

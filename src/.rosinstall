@@ -1,0 +1,10 @@
+- git:
+    local-name: leatherman
+    uri: https://github.com/aurone/leatherman.git
+- git:
+    local-name: sbpl_geometry_utils
+    uri: https://github.com/sbpl/sbpl_geometry_utils.git
+- git: 
+    local-name: smpl
+    uri: https://github.com/aurone/smpl.git
+

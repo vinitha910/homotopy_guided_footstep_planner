@@ -1,0 +1,23 @@
+<package format="2">
+    <name>footstep_planner</name>
+    <version>0.0.0</version>
+    <description>footstep_planner</description>
+    <maintainer email="vinitha.ranganeni@gmail.com">Vinitha Ranganeni</maintainer>
+    <maintainer email="chsahit@gmail.com">Sahit Chintalapudi</maintainer>
+    <author>Vinitha Ranganeni</author>
+    <author>Sahit Chintalapudi</author>
+    <license>BSD</license>
+
+    <buildtool_depend>catkin</buildtool_depend>
+
+    <depend>cmake_modules</depend>
+    <depend>eigen</depend>
+    <depend>eigen_conversions</depend>
+    <depend>geometry_msgs</depend>
+    <depend>nav_msgs</depend>
+    <depend>roscpp</depend>
+    <depend>smpl</depend>
+    <depend>sbpl_collision_checking</depend>
+    <depend>tf</depend>
+    <depend>pcl_ros</depend>
+</package>

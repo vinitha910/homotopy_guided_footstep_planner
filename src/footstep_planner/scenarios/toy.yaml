@@ -1,0 +1,56 @@
+frames: ["poppy_frame"]
+
+query_type: "simple"
+
+surfaces: ["package://footstep_planner/worlds/toy/surfaces/surface_0.stl",
+           "package://footstep_planner/worlds/toy/surfaces/surface_1.stl",
+           "package://footstep_planner/worlds/toy/surfaces/surface_2.stl"]
+stepping_surfaces: ["package://footstep_planner/worlds/toy/stepping_surfaces/stepping_surface_0.stl",
+                    "package://footstep_planner/worlds/toy/stepping_surfaces/stepping_surface_1.stl",
+                    "package://footstep_planner/worlds/toy/stepping_surfaces/stepping_surface_2.stl"]
+
+obstacles: "package://footstep_planner/worlds/toy/obstacles.stl"
+platforms: "package://footstep_planner/worlds/toy/platforms.stl"
+
+load_proto_msgs: false
+
+proto_msgs:
+    package: "footstep_planner"
+    robot_parameters: "/proto/robot_parameters.msg"
+    projections: "/proto/projections.msg"
+    stepping_cells: "/proto/valid_stepping_cells.msg"
+    beams: "/proto/beams.msg"
+    gates: "/proto/gates.msg"
+
+signatures: [[7, 8]]
+h-signatures: [[7, 8]]
+
+visualize:
+    robot_model: false
+    world: false
+    collision_model: false
+    anchor_heuristic: false
+    homotopic_heuristic: false
+    expansions: false
+    path: false
+
+map_params:
+    size_x: 8.6
+    size_y: 17.7
+    size_z: 10.0
+    origin_x: 0.0
+    origin_y: 0.0
+    origin_z: 0.0
+    cell_size: 0.1
+
+goal_pose:
+    x: 66
+    y: 18
+    theta: 0.0
+    workspace: 0
+
+start_pose:
+    x: 66
+    y: 110
+    theta: 0.785
+    workspace: 2

@@ -1,0 +1,61 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 2019, Vinitha Ranganeni & Sahit Chintalapudi
+// All rights reserved.
+//
+// Redistribution and use in source and binary forms, with or without
+// modification, are permitted provided that the following conditions are met:
+//
+//     1. Redistributions of source code must retain the above copyright notice
+//        this list of conditions and the following disclaimer.
+//     2. Redistributions in binary form must reproduce the above copyright
+//        notice, this list of conditions and the following disclaimer in the
+//        documentation and/or other materials provided with the distribution.
+//     3. Neither the name of the copyright holder nor the names of its
+//        contributors may be used to endorse or promote products derived from
+//        this software without specific prior written permission.
+//
+// THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+// AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+// IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+// ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE
+// LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+// CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+// SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+// INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+// CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+// ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+// POSSIBILITY OF SUCH DAMAGE.
+////////////////////////////////////////////////////////////////////////////////
+
+syntax = "proto2";
+
+package footstep_planner.graphs.proto;
+
+import "environment_projections.proto";
+
+message Beams {
+
+    // Defines the point from which the beam is extended (x, y, workspace) and
+    // the letter associated with this beam
+    message Beam {
+        required uint32 x = 1;
+        required uint32 y = 2;
+        required uint32 workspace = 3;
+        required uint32 letter = 4;
+    }
+
+    // List of all the beams in the environment
+    repeated Beam beams = 1;
+}
+
+message Gates {
+    message Gate {
+        // The indices for the two workspaces this gate connect
+        required footstep_planner.environment.proto.WorkspaceIndices workspaces = 1;
+
+        // The letter associated with this gate
+        required uint32 letter = 2;
+    }
+    // The List of all the gates in the environment
+    repeated Gate gates = 1;
+}
