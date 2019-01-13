@@ -1,6 +1,6 @@
 # Homotopy Guided Footstep Planner
 
-This repository contains an humanoid footstep planning framework that uses the Homotopy-Shortest Path Algorithm ([HBSP](https://aaai.org/ocs/index.php/ICAPS/ICAPS18/paper/view/17721/16943)) for automatically generating heuristic functions.
+This repository contains a humanoid footstep planning framework that uses the Homotopy-Shortest Path Algorithm ([HBSP](https://aaai.org/ocs/index.php/ICAPS/ICAPS18/paper/view/17721/16943)) for automatically generating heuristic functions.
 
 ## Table of Contents
 1. [Installation](#installation)
