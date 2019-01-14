@@ -1,0 +1,105 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 2019, Vinitha Ranganeni & Sahit Chintalapudi
+// All rights reserved.
+//
+// Redistribution and use in source and binary forms, with or without
+// modification, are permitted provided that the following conditions are met:
+//
+//     1. Redistributions of source code must retain the above copyright notice
+//        this list of conditions and the following disclaimer.
+//     2. Redistributions in binary form must reproduce the above copyright
+//        notice, this list of conditions and the following disclaimer in the
+//        documentation and/or other materials provided with the distribution.
+//     3. Neither the name of the copyright holder nor the names of its
+//        contributors may be used to endorse or promote products derived from
+//        this software without specific prior written permission.
+//
+// THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+// AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+// IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+// ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE
+// LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+// CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+// SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+// INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+// CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+// ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+// POSSIBILITY OF SUCH DAMAGE.
+////////////////////////////////////////////////////////////////////////////////
+
+syntax = "proto2";
+
+package footstep_planner.environment.proto;
+
+// This message contains contains information about connected workspaces.
+//
+// If a (x, y, z) workspace point does not map to any workspace then
+// lower_workspace_idx and upper_workspace_idx are left blank.
+//
+// If a (x, y, z) workspace point maps to only one workspace then we assign it
+// to lower_workspace_idx and upper_workspace_idx is left blank.
+//
+// If a (x, y, z) workspace point maps to two workspaces, this point is a gate
+// point and the the lower_workspace_idx and upper_workspace_idx are assigned
+// accordingly.
+message WorkspaceIndices {
+    // The index corresponding to the lower connected workspace.
+    optional uint32 lower_workspace_idx = 1;
+
+    // The index corresponding to the upper connected workspace.
+    optional uint32 upper_workspace_idx = 2;
+}
+
+// This message contains information about an environment projected onto a
+// specific workspace.
+message EnvironmentProjection {
+    enum CellType {
+        OUTER_WORKSPACE_AREA_CELL = 1;
+        FREE_CELL = 2;
+        GATE_CELL = 3;
+        OBSTACLE_CELL = 4;
+        WORKSPACE_BOUNDARY_CELL = 5;
+    }
+
+    // This field stores the projected environment. More specifically, it maps
+    // a 1D index of a (x, y, workspace_idx) point to 1 if the cell is occupied
+    // (i.e. an obstacle) and 0 otherwise.
+  	repeated CellType data = 1 [packed=true];
+
+    // This field maps a 1D index of a (x, y, workspace_idx) point to a
+    // (x, y, surface_z) point on a surface
+    repeated uint32 workspace_2d_to_surface_3d = 2 [packed=true];
+}
+
+// This message contains information about a 3D environment projected onto
+// multiple workspaces as well as several mappings between the various spaces.
+message EnvironmentProjections {
+    // The number of rows on a workspace
+    required uint32 rows = 1;
+
+    // The number of columns on a workspace
+    required uint32 cols = 2;
+
+    // A list of all the projections for each workspace.
+	repeated EnvironmentProjection projections = 3;
+
+    // A mapping between a (x, y, surface_z) surface point to the corresponding
+    // connected workspaces
+	repeated WorkspaceIndices surface_3d_to_indices = 4;
+
+    // A mapping between a (x, y, workspace_z) 3D workspace point to a
+    // (x, y, workspace_idx) 2.5D workspace point
+    repeated uint32 workspace_3d_to_2d = 5 [packed=true];
+
+    // A mapping from (x, y, surface_z) surface point to a (x, y, workspace_z)
+    // 3D workspace point that is a valid stepping cell
+    // This mapping is only used for visualization purposes
+    repeated uint32 surface_3d_to_stepping_cells = 6 [packed=true];
+}
+
+// This message contains a mapping between an (x, y, workspace_z) 3D workspace
+// point and it's validity. The point is valid (true) if the robot can place
+// its foot at the specific cell and false otherwise.
+message ValidSteppingCells {
+	repeated bool stepping_cell = 1 [packed = true];
+}

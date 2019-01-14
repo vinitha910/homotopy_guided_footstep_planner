@@ -1,0 +1,11 @@
+
+test_0:
+    solution_found:        1
+    hbsp_heuristic_time:   0.062425
+    anchor_heuristic_time: 0.018777
+    planning_time:         0.746278
+    total_planning_time:   0.827480
+    num_expansions:        14196
+    path length:           465
+    query_type:            "complex"
+

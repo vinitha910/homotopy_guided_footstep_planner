@@ -1,0 +1,51 @@
+frames: ["poppy_frame"]
+
+query_type: "simple"
+
+surfaces: ['package://footstep_planner/worlds/house/surfaces/surface_0.stl', 'package://footstep_planner/worlds/house/surfaces/surface_1.stl', 'package://footstep_planner/worlds/house/surfaces/surface_2.stl', 'package://footstep_planner/worlds/house/surfaces/surface_3.stl', 'package://footstep_planner/worlds/house/surfaces/surface_4.stl', 'package://footstep_planner/worlds/house/surfaces/surface_5.stl', 'package://footstep_planner/worlds/house/surfaces/surface_6.stl', 'package://footstep_planner/worlds/house/surfaces/surface_7.stl', 'package://footstep_planner/worlds/house/surfaces/surface_8.stl', 'package://footstep_planner/worlds/house/surfaces/surface_9.stl', 'package://footstep_planner/worlds/house/surfaces/surface_10.stl', 'package://footstep_planner/worlds/house/surfaces/surface_11.stl', 'package://footstep_planner/worlds/house/surfaces/surface_12.stl', 'package://footstep_planner/worlds/house/surfaces/surface_13.stl']
+stepping_surfaces: ['package://footstep_planner/worlds/house/stepping_surfaces/stepping_surface_0.stl', 'package://footstep_planner/worlds/house/stepping_surfaces/stepping_surface_1.stl', 'package://footstep_planner/worlds/house/stepping_surfaces/stepping_surface_2.stl', 'package://footstep_planner/worlds/house/stepping_surfaces/stepping_surface_3.stl', 'package://footstep_planner/worlds/house/stepping_surfaces/stepping_surface_4.stl', 'package://footstep_planner/worlds/house/stepping_surfaces/stepping_surface_5.stl', 'package://footstep_planner/worlds/house/stepping_surfaces/stepping_surface_6.stl', 'package://footstep_planner/worlds/house/stepping_surfaces/stepping_surface_7.stl', 'package://footstep_planner/worlds/house/stepping_surfaces/stepping_surface_8.stl', 'package://footstep_planner/worlds/house/stepping_surfaces/stepping_surface_9.stl', 'package://footstep_planner/worlds/house/stepping_surfaces/stepping_surface_10.stl', 'package://footstep_planner/worlds/house/stepping_surfaces/stepping_surface_11.stl', 'package://footstep_planner/worlds/house/stepping_surfaces/stepping_surface_12.stl', 'package://footstep_planner/worlds/house/stepping_surfaces/stepping_surface_13.stl']
+obstacles: "package://footstep_planner/worlds/house/obstacles.stl"
+platforms: "package://footstep_planner/worlds/house/platforms.stl"
+
+load_proto_msgs: true
+
+proto_msgs:
+    package: "footstep_planner"
+    robot_parameters: "/proto/robot_parameters.msg"
+    projections: "/proto/projections.msg"
+    stepping_cells: "/proto/valid_stepping_cells.msg"
+    beams: "/proto/beams.msg"
+    gates: "/proto/gates.msg"
+
+signatures: [[49, 13, 51, 15]]
+h_signatures: [[49, 13, 51, 15]]
+
+visualize:
+    robot_model: false
+    world: false
+    collision_model: false
+    anchor_heuristic: false
+    homotopic_heuristic: false
+    expansions: false
+    path: false
+
+map_params:
+    size_x: 23.8
+    size_y: 15.3
+    size_z: 5.2
+    origin_x: 0.0
+    origin_y: 0.0
+    origin_z: 0.0
+    cell_size: 0.1
+
+start_pose:
+    x: 172
+    y: 114
+    workspace: 2
+    theta: 2.661
+
+goal_pose:
+    x: 166
+    y: 45
+    workspace: 0
+    theta: 2.273

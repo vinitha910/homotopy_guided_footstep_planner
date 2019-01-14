@@ -1,0 +1,10 @@
+<launch>
+    <param name="robot_description" command="$(find xacro)/xacro.py '$(find robot_description)/urdf/poppy_humanoid.urdf.xacro'"/>
+
+
+  	<arg name="scenario" default="hbsp_1/hbsp_test_1_1.yaml"/>
+
+  	<rosparam command="load" file="$(find footstep_planner)/scenarios/$(arg scenario)" />
+
+  	<node pkg="footstep_planner" type="project_environment_test" name="project_environment_test" required="true" clear_params="true"  output="screen"/>
+</launch>
