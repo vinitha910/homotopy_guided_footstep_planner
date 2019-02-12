@@ -37,6 +37,7 @@ motion_primitives {
   dz: _magnitude of the z-unit vector_
 }
 ```
+Remember to define your motion primitives in the *discretized* coordinate frame. The successors are found in the *world* coordinate frame using the motion primitive in the following format: `(dx*cell_size, dy*cell_size, dz*cell_size, 2*PI/num_theta_vals)`. `2*PI/num_theta_vals` is the delta theta/orientation of the foot. The cell size is defined in the [scenario description](https://github.com/vinitha910/homotopy_guided_footstep_planner/blob/master/src/footstep_planner/python/README.md#creating-test-scenarios).
 
 The `active foot` is the foot we want expand and its potential successors are found with respect to the `pivot foot`. 
 <p align="center">
